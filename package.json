@@ -1,0 +1,32 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "ne znma pojma ovo je kraci opis ovoga sto cinim",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trutman/hello-world.git"
+  },
+  "author": "trutman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trutman/hello-world/issues"
+  },
+  "homepage": "https://github.com/trutman/hello-world#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "node-notifier": "^5.1.2"
+  },
+  "devDependencies": {
+    "electron": "^1.7.9",
+    "electron-packager": "^9.1.0"
+  },
+  "scripts": {
+   "package-win": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Electron Tutorial App\""
+    }
+}
